@@ -1,0 +1,371 @@
+<template>
+  <div id="app">
+    <header>
+      <a href="https://www.greenpeace.org/taiwan/?ref=2020-climate_energy_bulkuser_logo_homepage" target="_blank">        
+        <img src="./assets/img/gplogo.png"
+              srcset="./assets/img/gplogo.png 1x,
+                      ./assets/img/gplogo@2x.png 2x"
+              class="gplogo" alt="Greenpeace Logo" />
+      </a>
+    </header>
+    <main>
+      <div id="landing-page">
+          <section id="section-1">        
+              <div class="inner-content-50" data-aos="zoom-out-down">
+                  <p>用電大戶使用電量<br>佔全臺<span class="percent hide-on-desktop">50%</span></p>
+                  <span class="percent hide-on-mobile">50%</span>
+              </div>
+              <div class="inner-content-1" data-aos="zoom-out-up">
+                  <p>承擔的再生能源發電量<br>佔全臺不到<span class="percent hide-on-desktop">1%</span></p>
+                  <span class="percent hide-on-mobile">1%</span>
+              </div>
+              <div class="inner-container">
+                  <div class="inner-content-main">
+                      <h2>民眾節電，那企業呢？</h2>
+                      <p>用電大戶用掉全臺50%以上的電力，是臺灣的碳排放大戶，也是臺灣能否達成減碳目標的關鍵角色！然而，在經濟部規劃的「用電大戶條款」中，僅要求用電大戶轉用不到全臺電力1%的再生能源來減碳；<b>為此，綠色和平將對經濟部提起氣候訴訟，透過法律的力量來導正不公平的「用電大戶條款」</b>，阻止經濟部繼續放任用電大戶犧牲氣候與環境來獲利。</p>
+                      <div class="progress">
+                          <div class="progress-number">0</div>
+                          <div id="progress-bar" class="progress-bar"></div>
+                          <p>立即連署，號招更多朋友參與，達到目標：<span class="progress-target">20,000</span>人</p>              
+                      </div>              
+                      <div class="next-page">
+                          <button class="btn sign-up-btn hide-on-mobile">立即連署</button>
+                          <a href="javascript:;" data-target="2">
+                              <img src="./assets/img/mobile-arrow.png"
+                                  srcset="./assets/img/mobile-arrow.png 1x,
+                                          ./assets/img/mobile-arrow@2x.png 2x,
+                                          ./assets/img/mobile-arrow@3x.png 3x"
+                                  class="mobile-arrow vert-move hide-on-desktop">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section id="section-2">
+              <div class="inner-content">
+                  <div class="inner-cta">
+                      <p><span class="color-on-mobile">立即連署</span><span class="hide-on-mobile">：</span></p>
+                      <p>支持臺灣第一場氣候訴訟！<br class="hide-on-desktop" />要求政府加強管制用電大戶</p>
+                  </div>
+                  <div class="img-div">
+                      <img src="./assets/img/island-215.png"
+                          srcset="./assets/img/island-215.png 215w,
+                                  ./assets/img/island-593.png 593w,
+                                  ./assets/img/island-645.png 645w,
+                                  ./assets/img/island-1186.png 1186w"
+                          sizes="(max-width: 380px) 215px,
+                                  (max-width: 593px) 800px,
+                                  (max-width: 645px) 1000px,
+                                  1186px"
+                          class="island" data-aos="zoom-in-up" data-aos-duration="1500"> 
+                  </div>
+                  <p>綠色和平將正式對經濟部提出氣候訴訟，要求經濟部<b>提高用電大戶的綠電義務、擴大用電大戶範圍及公開用電大戶名單</b>，以此阻止用電大戶繼續貪婪用電，肆無忌憚地犧牲氣候與環境。您的連署支持，能提升司法部門對此案的重視，幫助綠色和平贏下這場氣候戰役。</p>
+              </div>
+              <form id="view-form">
+                  <div id="email-div">
+                      <label for="email"><b>*</b> 電子信箱：</label>
+                      <input type="email" id="email" name="email" class="email" required> 
+                  </div>
+                  <div class="Name-div">
+                      <div class="lastName-div">
+                          <label for="lastName"><b>*</b> 姓氏：</label>
+                          <input type="text" id="lastName" name="lastName" class="validate-name" required> 
+                      </div>
+                      <div class="firstName-div">
+                          <label for="firstName"><b>*</b> 名字：</label>
+                          <input type="text" id="firstName" name="firstName" class="validate-name" required> 
+                      </div>
+                  </div>
+                  <div>
+                      <label for="phone"><b>*</b> 連絡電話：</label>
+                      <input type="text" id="phone" name="phone" class="taiwan-phone" required> 
+                  </div>
+                  <div>
+                      <label for="birthYear"><b>*</b> 出生年份：</label>
+                      <select id="birthYear" name="birthYear" required></select>
+                  </div>
+                  <div>
+                      <div class="checkbox-div">
+                          <input type="checkbox" id="optin" name="optin" value="" checked />
+                          <label for="optin"></label>
+                          <div class="privacy-info">我要即時收到最新專案訊息，知道更多參與和協助的方法！綠色和平尊重並保障您的個人隱私資料，您隨時可取消訂閱，請參考<a href="https://www.greenpeace.org/taiwan/policies/privacy-and-cookies/?ref=2020-climate_energy_bulkuser_form_homepage" target="_blank" title="隱私保護政策">隱私保護政策</a>。</div>
+                      </div>
+                  </div>
+                  <div class="btn-div">
+                      <button class="btn submit-btn">立即連署</button>
+                  </div>                        
+              </form>
+          </section>
+          <section id="section-3">
+                <div class="inner-container">
+                    <h2>為什麼用電大戶應該用綠電</h2>
+                    <p>目前臺灣發電方式仍以火力為主，<b>其中用電大戶就用掉全臺50%以上電力</b>  ，若用電大戶承擔企業社會責任儘快轉用再生能源，就能大幅減少火力發電，對於減緩空污、降低溫室氣體排放量都有極大幫助。</p>
+                </div>
+                <div class="next-page">      
+                    <a href="javascript:;" data-target="4">
+                        <img src="./assets/img/mobile-arrow.png"
+                            srcset="./assets/img/mobile-arrow.png 1x,
+                                    ./assets/img/mobile-arrow@2x.png 2x,
+                                    ./assets/img/mobile-arrow@3x.png 3x"
+                            class="mobile-arrow vert-move">
+                    </a>
+                </div>
+            </section>
+            <section id="section-4">
+                <div class="inner-container">
+                    <div class="inner-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img/1116-action-emailuse.jpg"
+                                    srcset="./assets/img/1116-action-emailuse.jpg 1x,
+                                            ./assets/img/1116-action-emailuse@2x.jpg 2x,
+                                            ./assets/img/1116-action-emailuse@3x.jpg 3x"
+                                    class="news-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/0519-action-emailuse.jpg"
+                                    srcset="./assets/img/0519-action-emailuse.jpg 1x,
+                                            ./assets/img/0519-action-emailuse@2x.jpg 2x,
+                                            ./assets/img/0519-action-emailuse@3x.jpg 3x"
+                                    class="news-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/1111-action-emailuse.jpg"
+                                    srcset="./assets/img/1111-action-emailuse.jpg 1x,
+                                            ./assets/img/1111-action-emailuse@2x.jpg 2x,
+                                            ./assets/img/1111-action-emailuse@3x.jpg 3x"
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-right">
+                        <h2>遺憾的是...</h2>
+                        <p>綠色和平關注用電大戶條款一年半，在這五百多個日子裡，我們舉辦了多次記者會、參與公聽會，寄發公文向監察院提起糾正案，更進行 2 場非暴力直接行動，試圖與經濟部長王美花展開對話，要求經濟部修正用電大戶條款。經濟部不但從未正面回應，還持續以用電大戶為重，對工業總會的施壓一再讓步，先後放寬用電大戶定義、降低再生能源義務量，還將用電大戶建置再生能源的緩衝期從 3 年延長到 5 年。</p>                                        
+                        <!-- ver1
+                        <div class="hide-on-desktop">
+                            <img src="./assets/img/pic-news.png"
+                                srcset="./assets/img/pic-news.png 1x,
+                                        ./assets/img/pic-news@2x.png 2x,
+                                        ./assets/img/pic-news@3x.png 3x"
+                                class="news-img-mobile" data-aos="flip-down" data-aos-duration="1500">
+                        </div>-->                        
+                    </div>  
+                    <!-- ver1
+                    <div class="inner-left hide-on-mobile">
+                        <img src="./assets/img/desktop-pic-news.png"
+                            srcset="./assets/img/desktop-pic-news.png 1x,
+                                    ./assets/img/desktop-pic-news@2x.png 2x,
+                                    ./assets/img/desktop-pic-news@3x.png 3x"
+                            class="news-img-desktop" data-aos="flip-down" data-aos-duration="1500">
+                    </div>
+                    <div class="inner-right">
+                        <h2>遺憾的是...</h2>
+                        <p>綠色和平關注用電大戶條款一年半，在這五百多個日子裡，我們舉辦了多次記者會、參與公聽會，寄發公文向監察院提起糾正案，更進行 2 場非暴力直接行動，試圖與經濟部長王美花展開對話，要求經濟部修正用電大戶條款。經濟部不但從未正面回應，還持續以用電大戶為重，對工業總會的施壓一再讓步，先後放寬用電大戶定義、降低再生能源義務量，還將用電大戶建置再生能源的緩衝期從 3 年延長到 5 年。</p>                                        
+                        <div class="hide-on-desktop">
+                            <img src="./assets/img/pic-news.png"
+                                srcset="./assets/img/pic-news.png 1x,
+                                        ./assets/img/pic-news@2x.png 2x,
+                                        ./assets/img/pic-news@3x.png 3x"
+                                class="news-img-mobile" data-aos="flip-down" data-aos-duration="1500">
+                        </div>                    
+                        <p>而<b>政府</b>作為人民的保母，始終以「營業秘密」為由保護企業，拒絕公開用電大戶名單，更多次放寬用電大戶條款規定，<b>幫助企業躲避社會責任。</b></p>
+                    </div>                        
+                    -->
+
+                </div>
+                <div class="next-page">                   
+                    <a href="javascript:;" data-target="5" class="hide-on-mobile">   
+                        <img src="./assets/img/mobile-arrow.png"
+                        srcset="./assets/img/mobile-arrow@2x.png 1x,
+                                ./assets/img/mobile-arrow@2x.png 2x,
+                                ./assets/img/mobile-arrow@3x.png 3x"
+                        class="mobile-arrow vert-move">
+                    </a>
+                    <a href="javascript:;" data-target="6" class="hide-on-desktop">   
+                        <img src="./assets/img/mobile-arrow.png"
+                        srcset="./assets/img/mobile-arrow.png 1x,
+                                ./assets/img/mobile-arrow@2x.png 2x,
+                                ./assets/img/mobile-arrow@3x.png 3x"
+                        class="mobile-arrow vert-move">
+                    </a>
+                </div>
+            </section>
+            <section id="section-5">
+                <div class="inner-container">
+                    <!-- ver1
+                    <p>為此 - 綠色和平將對經濟部提出公民訴訟，</p>
+                    <p>需要您連署支持，<b>讓政府聽到公民的聲音</b></p>
+                    -->
+                </div>
+                <div class="next-page"> 
+                    <a href="javascript:;" data-target="5_1">                       
+                        <img src="./assets/img/mobile-arrow-white.svg"
+                            class="mobile-arrow vert-move">
+                    </a>
+                </div>
+            </section>
+            <section id="section-5_1">
+                <div class="inner-container">
+                    <div class="inner-cta">                        
+                        <p class="hide-on-desktop">為氣候站出來！<br><b>別讓用電大戶成為臺灣減碳路上的絆腳石!</b></p>
+                        <p class="inner-title">訴訟進程</p>
+                    </div>     
+                    
+                    <div class="process-carousel hide-on-desktop">                        
+                        <div class="process-cell">                              
+                            <img src="./assets/img/202011.png"
+                                srcset="./assets/img/202011.png 1x
+                                        ./assets/img/202011@2x.png 2x,
+                                        ./assets/img/202011@3x.png 3x" />
+                            <p>綠色和平與近萬名連署人，向經濟部遞交公民告知書。</p>
+                        </div>                        
+                        <div class="process-cell">
+                            <img src="./assets/img/202012.png"
+                                srcset="./assets/img/202012.png 1x
+                                        ./assets/img/202012@2x.png 2x,
+                                        ./assets/img/202012@3x.png 3x" />
+                            <p>綠色和平正式向經濟部提告，展開臺灣第一場氣候訴訟</p>
+                        </div>                        
+                        <div class="process-cell">
+                            <img src="./assets/img/now.png"
+                                srcset="./assets/img/now.png 1x
+                                        ./assets/img/now@2x.png 2x,
+                                        ./assets/img/now@3x.png 3x" />
+                            <p>法院審理中，等待開庭通知</p>                        
+                        </div>
+                    </div>          
+                                          
+                    <div class="inner-content hide-on-mobile">                        
+                        <div class="progress" data-aos="zoom-in-right" data-aos-duration="1000">                              
+                            <img src="./assets/img/202011.png"
+                                srcset="./assets/img/202011.png 1x
+                                        ./assets/img/202011@2x.png 2x,
+                                        ./assets/img/202011@3x.png 3x" />                          
+                            <p>綠色和平與近萬名連署人<br>向經濟部遞交公民告知書</p>
+                        </div>
+                        <div class="right-arrow" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">⟩</div>
+                        <div class="progress" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1000">
+                            <img src="./assets/img/202012.png"
+                                srcset="./assets/img/202012.png 1x
+                                        ./assets/img/202012@2x.png 2x,
+                                        ./assets/img/202012@3x.png 3x" />
+                            <p>綠色和平正式向經濟部提告<br>展開臺灣第一場氣候訴訟</p>
+                        </div>
+                        <div class="right-arrow" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1500">⟩</div>
+                        <div class="progress" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="2000">
+                            <img src="./assets/img/now.png"
+                                srcset="./assets/img/now.png 1x
+                                        ./assets/img/now@2x.png 2x,
+                                        ./assets/img/now@3x.png 3x" />  
+                            <p>法院審理中<br>等待開庭通知</p>                        
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            <section id="section-6">                
+                <div class="inner-container">
+                    <div class="inner-cta">
+                        <p><span class="color-on-mobile">立即連署</span><span class="hide-on-mobile">：</span></p>
+                        <p><b>支持我們贏得臺灣第一場氣候訴訟</b></p>
+                    </div>
+                    <div class="img-div">
+                        <img src="./assets/img/pic-f.svg" class="balance-img" data-aos="zoom-in" data-aos-duration="1500">                       
+                    </div>
+                    <p>2020年8月，用電大戶條款草案預告後，綠色和平隨即展開緊急連署，短短三個月時間，就有近萬名民眾加入連署行列，認同臺灣主要的電力使用者應轉用更多再生能源來減碳，無奈經濟部依然以企業為重，執意讓極為寬鬆的「用電大戶條款」於2021年元旦上路。</p>                    
+                    <p>用電大戶是臺灣能否達成減碳目標的關鍵，透過這場氣候訴訟，綠色和平要讓經濟部聽見公民團體與民眾的聲音，<b>唯有修正用電大戶條款，才能落實環境正義，帶領臺灣走向低碳未來！</b></p>
+                    <br><br>
+                </div>
+                <!--
+                <div class="next-page hide-on-desktop"> 
+                    <a href="javascript:;" data-target="7">                       
+                        <img src="./assets/img/mobile-arrow.svg"
+                            class="mobile-arrow vert-move">
+                    </a>
+                </div>-->
+                <div class="btn-div">
+                    <button class="btn sign-up-btn">立即連署</button>
+                </div>
+            </section>
+            <section id="section-7">                
+                <div class="inner-container">
+                    <h2>一起為環境正義發聲</h2>
+                    <p>若您認同綠色和平的訴求方向，請您加入連署，您的姓名將列於綠色和平公民告知書附件一併呈交給經濟部，直接為環境正義發聲。</p>                    
+                </div>
+                <div>
+                    <button class="btn sign-up-btn">立即連署</button>
+                </div>
+            </section>
+      </div>  
+      <div id="thank-you-page">
+            <div class="inner-logo">
+                <a href="https://www.greenpeace.org/taiwan/?ref=2020-climate_energy_bulkuser_logo_homepage" target="_blank">        
+                    <img src="./assets/img/gplogo.png"
+                        srcset="./assets/img/gplogo.png 1x,
+                                ./assets/img/gplogo@2x.png 2x"
+                        class="gplogo" alt="Greenpeace Logo" />
+                </a>
+            </div>
+            <div class="inner-container">               
+                <div class="inner-cta">
+                    <p><b>感謝您連署聲援！</b></p>
+                    <p>綠色和平將持續向您回報用電大戶條款修法進度與訴訟進展。</p>
+                </div>
+                <div class="img-div">
+                    <img src="./assets/img/pic-mac-07.svg"
+                        class="thank-you-img" data-aos="fade-up" data-aos-duration="3000">
+                </div>
+                <p>綠色和平長期進行臺灣能源轉型工作，與公民團體共同阻止深澳燃煤電廠興建、敦促政府修訂《電業法》、監督大企業使用再生能源。氣候危機迫在眉睫，能源轉型是最佳解法，請分享連署，或以長期小額捐款支持綠色和平的氣候專案工作！</p>                
+                <div class="share-div">
+                    <p>分享至：</p>
+                    <div>                    
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://act.gp/3lD2PpS" rel="noopener noreferrer nofollow" target="_blank">
+                            <img src="./assets/img/mac-fbicon.svg" class="fb-icon">
+                        </a>
+                        <a href="https://social-plugins.line.me/lineit/share?url=https://act.gp/3gU6gVH&text=%E8%A6%81%E6%B1%82%E6%94%BF%E5%BA%9C%E6%8F%90%E9%AB%98%E7%94%A8%E9%9B%BB%E5%A4%A7%E6%88%B6%E5%86%8D%E7%94%9F%E8%83%BD%E6%BA%90%E7%BE%A9%E5%8B%99%E9%87%8F%EF%BC%8C%E8%90%BD%E5%AF%A6%E7%92%B0%E5%A2%83%E6%AD%A3%E7%BE%A9%EF%BC%81" rel="noopener noreferrer nofollow" target="_blank">
+                            <img src="./assets/img/mac-lineicon.svg" class="line-icon">
+                        </a>    
+                    </div>
+                    <br>
+                </div>
+            </div>            
+            <div class="btn-div">
+                <button class="btn donate-btn is-hidden-at-dd-page-only">支持我們</button>
+            </div>
+      </div>             
+    </main>
+    <footer>
+      <div class="first-div">
+          <a href="https://www.greenpeace.org/taiwan/?ref=2020-climate_energy_bulkuser_logo_homepage" target="_blank">        
+              <img src="./assets/img/gplogo.png"
+                  srcset="./assets/img/gplogo.png 1x,
+                          ./assets/img/gplogo@2x.png 2x"
+                  class="gplogo" alt="Greenpeace Logo" />
+          </a>
+          <p>
+              綠色和平致力於為地球發聲，我們的存在是因為脆弱的地球需要改變、需要行動。<br class="hide-on-mobile">
+              但保護地球的使命不能僅靠綠色和平來完成，「您」就是改變世界的力量！
+          </p>
+      </div>
+      <div class="second-div">                
+          <ul>
+              <li><a target="_blank" href="https://www.greenpeace.org/taiwan/?ref=2020-climate_energy_bulkuser_footer"><span>回到主頁</span>
+                  <span> <img src="./assets/img/icon-01.png"
+                              srcset="./assets/img/icon-01@2x.png 2x,
+                                      ./assets/img/icon-01@3x.png 3x"
+                              class="icon-01"></span></a></li>
+              <li><a target="_blank" href="https://supporter.ea.greenpeace.org/tw/s/donate?campaign=climate&ref=2020-climate_energy_bulkuser_footer"><span>捐助支持</span>
+                  <span>  <img src="./assets/img/icon-01.png"
+                              srcset="./assets/img/icon-01@2x.png 2x,
+                                      ./assets/img/icon-01@3x.png 3x"
+                              class="icon-01"></span></a></li>
+              <li><a target="_blank" href="http://www.greenpeace.org/taiwan/aboutus/privacy/?ref=2020-climate_energy_bulkuser_footer"><span>隱私政策與個人資料收集聲明</span>
+                  <span>  <img src="./assets/img/icon-01.png"
+                              srcset="./assets/img/icon-01@2x.png 2x,
+                                      ./assets/img/icon-01@3x.png 3x"
+                              class="icon-01"></span></a></li>
+          </ul>
+          <label>© 2020 Greenpeace</label>
+      </div>
+    </footer>
+  </div>
+</template>
