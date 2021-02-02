@@ -321,7 +321,7 @@
                         <a href="https://www.facebook.com/sharer/sharer.php?u=https://act.gp/3lD2PpS" rel="noopener noreferrer nofollow" target="_blank">
                             <img src="./assets/img/mac-fbicon.svg" class="fb-icon">
                         </a>
-                        <a href="https://social-plugins.line.me/lineit/share?url=https://act.gp/3gU6gVH&text=%E8%A6%81%E6%B1%82%E6%94%BF%E5%BA%9C%E6%8F%90%E9%AB%98%E7%94%A8%E9%9B%BB%E5%A4%A7%E6%88%B6%E5%86%8D%E7%94%9F%E8%83%BD%E6%BA%90%E7%BE%A9%E5%8B%99%E9%87%8F%EF%BC%8C%E8%90%BD%E5%AF%A6%E7%92%B0%E5%A2%83%E6%AD%A3%E7%BE%A9%EF%BC%81" rel="noopener noreferrer nofollow" target="_blank">
+                        <a href="https://social-plugins.line.me/lineit/share?url=https://act.gp/3gU6gVH&text=%E3%80%90%E7%AB%8B%E5%8D%B3%E9%80%A3%E7%BD%B2%E3%80%91%E6%94%AF%E6%8C%81%E8%87%BA%E7%81%A3%E7%AC%AC%E4%B8%80%E5%A0%B4%E6%B0%A3%E5%80%99%E8%A8%B4%E8%A8%9F%EF%BC%81%E8%A6%81%E6%B1%82%E7%B6%93%E6%BF%9F%E9%83%A8%E6%8F%90%E9%AB%98%E7%94%A8%E9%9B%BB%E5%A4%A7%E6%88%B6%E7%B6%A0%E9%9B%BB%E7%BE%A9%E5%8B%99" rel="noopener noreferrer nofollow" target="_blank">
                             <img src="./assets/img/mac-lineicon.svg" class="line-icon">
                         </a>    
                     </div>
