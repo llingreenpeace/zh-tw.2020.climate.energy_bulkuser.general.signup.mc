@@ -1,3 +1,4 @@
+import { line_QR_code } from './utm_source_dd.js';
 import AOS from "aos";
 var $ = require("jquery");
 import 'slick-carousel';
@@ -159,10 +160,11 @@ function initForm() {
     $.validator.addMethod( "taiwan-phone",
         (value) => {
             const phoneReg6 = new RegExp(/^(0|886|\+886)?(9\d{8})$/).test(value);
-            const phoneReg7 = new RegExp(/^(0|886|\+886){1}[2-8]-?\d{6,8}$/).test(value);
+            const phoneReg7 = new RegExp(/^(0|886|\+886){1}[3-8]-?\d{6,8}$/).test(value);
+            const phoneReg8 = new RegExp(/^(0|886|\+886){1}[2]-?\d{8}$/).test(value);
 
             if (value) {
-                return (phoneReg6 || phoneReg7)
+                return (phoneReg6 || phoneReg7 || phoneReg8)
             }
             return true
         },
@@ -288,12 +290,13 @@ function checkEmail() {
 	});
 }
 
-$( document ).ready(function() {    
-    AOS.init();
+$( document ).ready(function() {        
     initProgressBar();
     initForm();
     checkEmail();
     initSwiper();
+    AOS.init();
+    line_QR_code('line_block');
 
     $('.mobile-arrow').on( "click", function() {
         //console.log(this.parentNode.getAttribute('data-target'));         

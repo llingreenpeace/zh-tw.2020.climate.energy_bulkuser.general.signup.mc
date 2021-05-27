@@ -325,6 +325,7 @@
                             <img src="./assets/img/mac-lineicon.svg" class="line-icon">
                         </a>    
                     </div>
+                    <div id="line_block"></div>
                     <br>
                 </div>
             </div>            
