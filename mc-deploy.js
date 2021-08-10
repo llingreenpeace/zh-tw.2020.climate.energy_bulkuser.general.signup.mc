@@ -32,7 +32,7 @@ const os = require('os');
 
 // definitions
 let buildFolder = path.join(__dirname, "build")
-	EndpointURL = "https://cloud.greentw.greenpeace.org/petition-pp",
+	EndpointURL = "https://cloud.greentw.greenpeace.org/websign",
 	CampaignId = "7012u000000OwvfAAC",
 	DonationPageUrl = "https://www.greenpeace.org/eastasia/", // not used now
 	interests = ["Climate"]; // Arctic, Climate, Forest, Health, Oceans, Plastics	

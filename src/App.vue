@@ -64,21 +64,21 @@
               <form id="view-form">
                   <div id="email-div">
                       <label for="email"><b>*</b> 電子信箱：</label>
-                      <input type="email" id="email" name="email" class="email" required> 
+                      <input type="email" id="email" name="email" class="email" autocomplete="email" required> 
                   </div>
                   <div class="Name-div">
                       <div class="lastName-div">
                           <label for="lastName"><b>*</b> 姓氏：</label>
-                          <input type="text" id="lastName" name="lastName" class="validate-name" required> 
+                          <input type="text" id="lastName" name="lastName" class="validate-name" autocomplete="family-name" required> 
                       </div>
                       <div class="firstName-div">
                           <label for="firstName"><b>*</b> 名字：</label>
-                          <input type="text" id="firstName" name="firstName" class="validate-name" required> 
+                          <input type="text" id="firstName" name="firstName" class="validate-name" autocomplete="given-name" required> 
                       </div>
                   </div>
                   <div>
                       <label for="phone"><b>*</b> 連絡電話：</label>
-                      <input type="text" id="phone" name="phone" class="taiwan-phone" required> 
+                      <input type="text" id="phone" name="phone" class="taiwan-phone" autocomplete="tel" required> 
                   </div>
                   <div>
                       <label for="birthYear"><b>*</b> 出生年份：</label>
